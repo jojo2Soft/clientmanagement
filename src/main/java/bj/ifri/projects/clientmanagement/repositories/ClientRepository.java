@@ -1,5 +1,9 @@
 package bj.ifri.projects.clientmanagement.repositories;
 
-public class ClientRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import bj.ifri.projects.clientmanagement.models.Client;
+
+public interface ClientRepository extends JpaRepository<Client, Long>{
 
 }

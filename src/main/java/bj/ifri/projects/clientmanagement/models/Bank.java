@@ -27,6 +27,8 @@ public class Bank {
 	
 	private float capital;
 	
+	private String name;
+	
 	private String adresseSiege;
 	
 	@JsonIgnore
