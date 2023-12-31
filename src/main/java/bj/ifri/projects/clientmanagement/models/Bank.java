@@ -38,5 +38,7 @@ public class Bank {
 	@JsonIgnore
 	@OneToMany(mappedBy = "bank", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Employee> employees;
+	
+	
 //	private String villeAgences;
 }

@@ -1,6 +1,7 @@
 package bj.ifri.projects.clientmanagement.models;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -34,7 +35,7 @@ public class Client {
 	private String nameAdvisor;
 	
 	@ManyToOne
-	private  Agency agency;
+	private Agency agency;
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "client", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -52,6 +53,8 @@ public class Client {
     public List<BankAccountWithInterest> getListBankAccountWithInterests() {
         return this.bankAccountWithInterests;
     }
+    
+    
     
     
 	
