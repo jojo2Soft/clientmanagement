@@ -20,6 +20,5 @@ public interface BankRepository extends JpaRepository<Bank, Long> {
 //    @Query("SELECT DISTINCT ba.client FROM BankAccount ba WHERE ba.solde < 0 AND ba.agency.bank = :bank")
 //    List<Client> findOverdraftClients(@Param("bank") Optional<Bank> bank);
     
-//    @Query("SELECT DISTINCT ba.client FROM BankAccount ba WHERE ba.solde < 0 AND ba.agency.bank = :bank")
-//    List<Client> findOverdraftClients(@Param("bank") Optional<Bank> bank);
+
 }

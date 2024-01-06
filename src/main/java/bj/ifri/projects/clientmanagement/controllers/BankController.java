@@ -2,6 +2,7 @@ package bj.ifri.projects.clientmanagement.controllers;
 
 import java.util.List;
 
+
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,21 +14,30 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import bj.ifri.projects.clientmanagement.models.Agency;
 import bj.ifri.projects.clientmanagement.models.Bank;
+import bj.ifri.projects.clientmanagement.repositories.AgencyRepository;
 import bj.ifri.projects.clientmanagement.repositories.BankRepository;
 
 @Controller
-@RequestMapping("/banks")
+@RequestMapping(value="/banks")
 public class BankController {
 	
 	@Autowired
 	private BankRepository bankRepository;
 	
-	@GetMapping("/list")
+	
+	
+	@GetMapping("/lists")
 	public String listBanks(Model model) {
+		
+		 List<Bank> banks = bankRepository.findAll();
 
-		model.addAttribute("students", bankRepository.findAll());
-		return "banks";
+		// Print only the names to the console
+		banks.forEach(bank -> System.out.println(bank.getName()));
+
+	    model.addAttribute("banks", banks);
+	    return "banks";
 	}
 	
 	@GetMapping("/{id}")
@@ -37,24 +47,17 @@ public class BankController {
 		return "bank";
 	}
 	
-	@PostMapping("/add")
-	public String addBank(@ModelAttribute("bank") Bank bank) {
-
-		bankRepository.save(bank);
-
-		return "redirect:/banks/list";
-	}
+//	@PostMapping("/add")
+//	public String addBank(@ModelAttribute("bank") Bank bank) {
+//
+//		bankRepository.save(bank);
+//
+//		return "redirect:/banks/list";
+//	}
 	
 	//a revoir
 	
-	//lister tous les clients qui sont à découvert
-//	@GetMapping("/findOverdraftClients/{idBank}")
-//	public String findOverdraftClients(Model model, @PathVariable Long idBank) {
-//		Optional<Bank> bank = bankRepository.findById(idBank);
-//		model.addAttribute("bank", bankRepository.findOverdraftClients(bank));
-//		return "overdraftClients";
-//	}
-//	
+
 
 
 }

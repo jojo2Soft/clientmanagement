@@ -12,7 +12,9 @@ import bj.ifri.projects.clientmanagement.models.BankAccount;
 import bj.ifri.projects.clientmanagement.models.Client;
 @Repository
 public interface BankAccountRepository  extends JpaRepository<BankAccount, Long>{
-	//lister tous les clients qui sont à découvert
-//		@Query("SELECT DISTINCT bank.client FROM BankAccount bank WHERE bank.solde < 0 AND bank.agency.bank = :bank")
-//	    List<Client> findOverdraftClients(@Param("bank") Bank bank);
+
+//	@Query("SELECT ba FROM BankAccount ba WHERE ba.solde < 0")
+//	List<BankAccount> findAccountsWithNegativeBalance();
+	
+	
 }

@@ -3,6 +3,7 @@ package bj.ifri.projects.clientmanagement.models;
 import java.util.List;
 
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
