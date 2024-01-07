@@ -74,12 +74,7 @@
     <div class="left-menu-header col">
     </div>
     <div class="nav-right col pull-right right-menu p-0">
-      <ul class="nav-menus">
-        <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
-        <li class="onhover-dropdown p-0">
-          <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>Déconnexion</button>
-        </li>
-      </ul>
+      
     </div>
     <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
   </div>
@@ -109,7 +104,7 @@
                         <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
                     </li>
                	  <li class="dropdown">
-                        <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
+                        <a class="nav-link menu-title active" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
                         <ul class="nav-submenu menu-content"  style="display: block;">
                             <li><a href="/agences/clients" class="">Listes</a></li>
                             <li><a href="/clients/list/decoucouvert" class="active">Clients à découvers</a></li>
@@ -125,36 +120,12 @@
                         <div class="page-body">
                             <!-- Container-fluid starts-->
                                     <div class="container-fluid">
-    <div class="page-header">
-      <div class="row">
-        <div class="col-lg-6">
-          <h3>Statistique Globale</h3>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-              <li class="breadcrumb-item">Widgets</li>
-            <li class="breadcrumb-item active">General</li>
-          </ol>
-        </div>
-      </div>
-    </div>
+ 
 </div>        
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 col-xl-3 col-lg-6">
-                    <div class="card o-hidden border-0">
-                        <div class="bg-primary b-r-4 card-body">
-                            <div class="media static-top-widget">
-                                <div class="align-self-center text-center"><i data-feather="database"></i></div>
-                                <div class="media-body">
-                                    <span class="m-0">Solde Total</span>
-                                    <h4 class="mb-0 counter">6659</h4>
-                                    <i class="icon-bg" data-feather="database"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3 col-lg-6">
+               
+                <div class="col-sm-6 col-xl-4 col-lg-6">
                     <div class="card o-hidden border-0">
                         <div class="bg-secondary b-r-4 card-body">
                             <div class="media static-top-widget">
@@ -168,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="col-sm-6 col-xl-4 col-lg-6">
                     <div class="card o-hidden border-0">
                         <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
@@ -182,13 +153,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3 col-lg-6">
+                <div class="col-sm-6 col-xl-4 col-lg-6">
                     <div class="card o-hidden border-0">
                         <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
                                 <div class="align-self-center text-center"><i data-feather="user-plus"></i></div>
                                 <div class="media-body">
-                                    <span class="m-0">Compte avec interÃªt</span>
+                                    <span class="m-0">Compte avec intérêts</span>
                                     <h4 class="mb-0 counter">${nbBankAccountsWithInterest}</h4>
                                     <i class="icon-bg" data-feather="user-plus"></i>
                                 </div>

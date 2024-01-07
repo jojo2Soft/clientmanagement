@@ -148,9 +148,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                 ></a>
               </li>
               <li class="onhover-dropdown p-0">
-                <button class="btn btn-primary-light" type="button">
-                  <i data-feather="log-out"></i>DÃ©connexion
-                </button>
+                
               </li>
             </ul>
           </div>
@@ -173,7 +171,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
             <a href="javascript:void(0)">
               <h6 class="mt-3 f-14 f-w-600">Emay Walter</h6></a
             >
-            <p class="mb-0 font-roboto">Directeur gÃ©nÃ©ral</p>
+            <p class="mb-0 font-roboto">Directeur général</p>
           </div>
           <nav>
             <div class="main-navbar">
@@ -215,76 +213,11 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="page-header">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h3>General</h3>
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="../dashboard.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">Widgets</li>
-                    <li class="breadcrumb-item active">General</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="container-fluid">
             <div class="row">
               <!-- Zero Configuration  Starts-->
-              <div class="col-sm-12">
-                <div class="card">
-                  <form class="form theme-form">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col">
-                          <div class="mb-3">
-                            <label
-                              class="form-label"
-                              for="exampleFormControlSelect17"
-                              >Agences</label
-                            >
-                            <select
-                              class="form-select input-air-primary digits"
-                              id="agencySelect"
-                            >
-                              <option selected value="0">
-                                Toutes les agences
-                              </option>
-                              <c:forEach items="${agences}" var="agence">
-                                <option value="${agence.id}">
-                                  ${agence.name}
-                                </option>
-                              </c:forEach>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <c:url var="save_client_url" value="/agency/add"/>
-                <form:form action="" class="form theme-form" method="post" modelAttribute="">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-8">
-                          <div class="mb-3">
-                            <label
-                              class="form-label"
-                              for="exampleFormControlSelect17"
-                              >Rechercher un client</label
-                            >
-                           <input class="form-control input-air-primary" type="text" path="search"/>
-
-                          </div>
-                        </div>
-                       
-                      </div>
-                      <a href="" class="btn btn-warning col-4">Rechercher</a>
-                     
-                    </div>
-                  </form:form>
+    
                   <div class="row mx-4">
                		 <a href="/clients/add-client-form" class="btn btn-success col-3">Ajouter</a>
                  </div>

@@ -148,9 +148,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                 ></a>
               </li>
               <li class="onhover-dropdown p-0">
-                <button class="btn btn-primary-light" type="button">
-                  <i data-feather="log-out"></i>DÃ©connexion
-                </button>
+              
               </li>
             </ul>
           </div>

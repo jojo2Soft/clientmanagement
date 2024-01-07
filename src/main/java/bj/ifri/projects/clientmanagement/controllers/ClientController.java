@@ -101,26 +101,25 @@ public class ClientController {
 		return "redirect:/agences/clients";
 	}
 	
-	
-	
-	//lister tous les clients qui sont à découvert
-	
-//	public String getListClientAreInTheOpen(Model model) {
-//		
-//		model.addAllAttributes("clientAreInTheOpen", clientRepository)
-//		
-//	}
+
 	
 	//rechercher un client par son nom et prénom
-	@GetMapping("/search/:{firstname}/:{lastname}")
-	public String searchClients(@PathVariable String firtname, @PathVariable String lastname, Model model){
-		
-		List<Client> clients = clientRepository.findByFirstnameAndLastname(firtname, lastname);
-		model.addAttribute("clients", clients  );
-		
-		return "results";
-		
+	// Dans votre contrôleur
+	@PostMapping("/search")
+	public String searchClients(@ModelAttribute("searchClient") Client searchClient, Model model) {
+	    // Effectuez la recherche en utilisant les valeurs de searchClient
+	    List<Client> searchResults = clientRepository.findByFirstnameAndLastname(
+	            searchClient.getFirstname(), 
+	            searchClient.getLastname()
+	    );
+
+	    // Ajoutez les résultats à votre modèle
+	    model.addAttribute("clients", searchResults);
+
+	    // Renvoyez la vue qui affiche les résultats
+	    return "search-results";
 	}
+
 	
 	
 //	
