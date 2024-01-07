@@ -52,7 +52,6 @@ public class ClientController {
 	public String listClientsDecouvert(Model model) {
 		List<BankAccount> bankAccounts = bankAccountRepository.findAll();
 		
-		List<BankAccountWithInterest> bankAccountsAccountWithInterests = bankAccountWithInterestRepository.findAll();
 
 		List<Client> clients = new ArrayList<>();
 		for (BankAccount bankAccount : bankAccounts) {
@@ -61,12 +60,7 @@ public class ClientController {
 			}
 			 
 		}
-		for (BankAccountWithInterest bankAccountsAccountWithInterest : bankAccountsAccountWithInterests) {
-			if(bankAccountsAccountWithInterest.getSolde()<0) {
-				clients.add(bankAccountsAccountWithInterest.getClient()) ;
-			}
-			 
-		}
+		
 		model.addAttribute("clients", clients );
 
 		

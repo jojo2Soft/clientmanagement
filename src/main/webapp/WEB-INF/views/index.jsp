@@ -104,8 +104,8 @@
                         <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
                     </li>
                	  <li class="dropdown">
-                        <a class="nav-link menu-title active" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
-                        <ul class="nav-submenu menu-content"  style="display: block;">
+                        <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
+                        <ul class="nav-submenu menu-content"  style="display: none;">
                             <li><a href="/agences/clients" class="">Listes</a></li>
                             <li><a href="/clients/list/decoucouvert" class="active">Clients à découvers</a></li>
                         </ul>
@@ -129,11 +129,11 @@
                     <div class="card o-hidden border-0">
                         <div class="bg-secondary b-r-4 card-body">
                             <div class="media static-top-widget">
-                                <div class="align-self-center text-center"><i data-feather="shopping-bag"></i></div>
+                                <div class="align-self-center text-center"><i data-feather="home"></i></div>
                                 <div class="media-body">
                                     <span class="m-0">Nombre d'agencess</span>
                                     <h4 class="mb-0 counter">${nbAgences}</h4>
-                                    <i class="icon-bg" data-feather="shopping-bag"></i>
+                                    <i class="icon-bg" data-feather="home"></i>
                                 </div>
                             </div>
                         </div>
@@ -143,11 +143,11 @@
                     <div class="card o-hidden border-0">
                         <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
-                                <div class="align-self-center text-center"><i data-feather="message-circle"></i></div>
+                                <div class="align-self-center text-center"><i data-feather="credit-card"></i></div>
                                 <div class="media-body">
                                     <span class="m-0">Compte Bancaires</span>
                                     <h4 class="mb-0 counter">${nbBankAccounts}</h4>
-                                    <i class="icon-bg" data-feather="message-circle"></i>
+                                    <i class="icon-bg" data-feather="credit-card"></i>
                                 </div>
                             </div>
                         </div>
@@ -157,11 +157,11 @@
                     <div class="card o-hidden border-0">
                         <div class="bg-primary b-r-4 card-body">
                             <div class="media static-top-widget">
-                                <div class="align-self-center text-center"><i data-feather="user-plus"></i></div>
+                                <div class="align-self-center text-center"><i data-feather="credit-card"></i></div>
                                 <div class="media-body">
                                     <span class="m-0">Compte avec intérêts</span>
                                     <h4 class="mb-0 counter">${nbBankAccountsWithInterest}</h4>
-                                    <i class="icon-bg" data-feather="user-plus"></i>
+                                    <i class="icon-bg" data-feather="credit-card"></i>
                                 </div>
                             </div>
                         </div>

@@ -104,11 +104,11 @@
                         <a class="nav-link menu-title link-nav  " href="/"><i data-feather="git-pull-request"></i><span>Dashboard</span></a>
                     </li>
                     <li class="back-btn">
-                        <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
+                        <a class="nav-link menu-title link-nav active" href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
                     </li>
                	  <li class="dropdown">
                         <a class="nav-link menu-title " href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
-                        <ul class="nav-submenu menu-content"  style="display: block;">
+                        <ul class="nav-submenu menu-content"  style="display: none;">
                             <li><a href="/agences/clients" class="">Listes</a></li>
                             <li><a href="/clients/list/decoucouvert" class="active">Clients à découvers</a></li>
                         </ul>
@@ -129,10 +129,10 @@
                  </div>
                 </div>
                 <div class="col-sm-12">
-                    <div class="card">
-                       <div class="card-header">
-                            <h5>Listes des agences</h5>
-                        </div>
+	                    <div class="card">
+	                       <div class="shadow-lg p-25 shadow-showcase text-center">
+		                  <h5 class="m-0 f-18">Listes des agences</h5>
+		                </div>
                         <div class="card-block row">
                             <div class="col-sm-12 col-lg-12 col-xl-12">
                                 <div class="table-responsive">

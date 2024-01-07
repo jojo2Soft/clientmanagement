@@ -64,7 +64,7 @@ public class ClientmanagementApplication {
 	}
 
 //	
-//	@Bean
+	@Bean
 	public CommandLineRunner commandLineRunner(org.springframework.context.ApplicationContext ctx) {
 		return args->{
 			Bank bank = new Bank();
@@ -84,8 +84,8 @@ public class ClientmanagementApplication {
 			
 			Agency agency2 = new Agency();
 			agency2.setBank(bank);
-			agency2.setCity("Cotonou");
-			agency2.setName("Agence de Cotonou");
+			agency2.setCity("Parakou");
+			agency2.setName("Agence de Parakou");
 			agency2.setPostalCode("BP 90");
 			agency2.setNameOfManager("KOKO Joel");
 			agency2.setNameOfBank(bank.getName());
@@ -124,6 +124,14 @@ public class ClientmanagementApplication {
 			client.setAgency(agency);
 			clientRepository.save(client);
 			
+			Client client2 = new Client();
+			client2.setAdress("Cotonou");
+			client2.setFirstname("josue");
+			client2.setLastname("agboton");
+			client2.setNameAdvisor(employee.getFirstname()+ " "+ employee.getLastname());
+			client2.setAgency(agency);
+			clientRepository.save(client2);
+			
 			BankAccount bankAccount = new BankAccount();
 			bankAccount.setAgencyBank(agency.getName());
 			bankAccount.setClient(client);
@@ -133,34 +141,33 @@ public class ClientmanagementApplication {
 			bankAccount.setFirstnameClient(client.getFirstname());
 			bankAccountRepository.save(bankAccount);
 			
-			
 			BankAccount bankAccount2 = new BankAccount();
 			bankAccount2.setAgencyBank(agency.getName());
 			bankAccount2.setClient(client);
-			bankAccount2.setSolde(-233);
-			bankAccount2.setOpeningDate(null); 
+			bankAccount2.setSolde(-90060);
+			bankAccount2.setOpeningDate(null);
 			bankAccount2.setLastnameClient(client.getLastname());
 			bankAccount2.setFirstnameClient(client.getFirstname());
 			bankAccountRepository.save(bankAccount2);
 			
+			BankAccount bankAccount3 = new BankAccount();
+			bankAccount3.setAgencyBank(agency.getName());
+			bankAccount3.setClient(client2);
+			bankAccount3.setSolde(-90060);
+			bankAccount3.setOpeningDate(null);
+			bankAccount3.setLastnameClient(client2.getLastname());
+			bankAccount3.setFirstnameClient(client2.getFirstname());
+			bankAccountRepository.save(bankAccount3);
+			
+			
 			BankAccountWithInterest bankAccountWithInterest = new BankAccountWithInterest();
 			bankAccountWithInterest.setAgencyBank(agency.getName());
-			bankAccountWithInterest.setClient(client);
+			bankAccountWithInterest.setClient(client2);
 			bankAccountWithInterest.setSolde(233);
 			bankAccountWithInterest.setRate((float) 0.06);
 			bankAccountWithInterest.setLastnameClient(client.getLastname());
 			bankAccountWithInterest.setFirstnameClient(client.getFirstname());
 			bankAccountWithInterestRepository.save(bankAccountWithInterest);
-			
-			
-			
-			//liste des client d'une agence
-			
-			
-			
-			
-			
-			
 			
 			
 			

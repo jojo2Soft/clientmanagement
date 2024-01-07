@@ -193,6 +193,9 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                     >
                   </li>
                   <li class="dropdown">
+                        <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
+                    </li>
+                  <li class="dropdown">
                     <a class="nav-link menu-title" href="javascript:void(0)"
                       ><i data-feather="airplay"></i><span>Clients</span></a
                     >
@@ -221,8 +224,8 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
             <div class="row">
               <!-- Zero Configuration  Starts-->
               <div class="col-sm-12">
-                <div class="card">
-                  <h5>Listes des clients à découvert</h5>
+                <div class="shadow-lg p-25 shadow-showcase text-center">
+                  <h5 class="m-0 f-18">Listes des clients à découvert</h5>
                 </div>
                 <div class="card">
                   <div class="card-body">
