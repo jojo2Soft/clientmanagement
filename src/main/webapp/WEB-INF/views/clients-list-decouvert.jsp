@@ -253,7 +253,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                             <th>Adresse</th>
                             <th>Conseiller</th>
                             <th>Agence</th>
-                            <th>Action</th>
+                           <!-- <th>Action</th> -->
                           </tr>
                         </thead>
                         <tbody>
@@ -265,7 +265,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                               <td>${client.adress}</td>
                               <td>${client.nameAdvisor}</td>
                               <td>${client.agency.name}</td>
-                              <td><a href="" class="btn btn-success">Consulter le soldes des comptes</a></td>
+                            <!--  <td><a href="" class="btn btn-success">Consulter le soldes des comptes</a></td> -->
                             </tr>
                           </c:forEach>
                         </tbody>

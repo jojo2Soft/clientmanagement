@@ -25,7 +25,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import bj.ifri.projects.clientmanagement.repositories.ClientRepository;
 import bj.ifri.projects.clientmanagement.repositories.EmployeeRepository;
 
-
+//MEMBRE DU GROUPE
+//ATIOGBE Ernest Déogratias  (Filière => SI)
+//AGBOTON Josué Espérance (Filière => GL)
 
 @SpringBootApplication
 public class ClientmanagementApplication {

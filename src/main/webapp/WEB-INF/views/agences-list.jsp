@@ -105,11 +105,11 @@
                     <li class="back-btn">
                         <a class="nav-link menu-title link-nav  " href="/"><i data-feather="git-pull-request"></i><span>Dashboard</span></a>
                     </li>
-                    <li class="dropdown">
+                    <li class="back-btn">
                         <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
                     </li>
                	  <li class="dropdown">
-                        <a class="nav-link menu-title active" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
+                        <a class="nav-link menu-title " href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
                         <ul class="nav-submenu menu-content"  style="display: block;">
                             <li><a href="/agences/clients" class="">Listes</a></li>
                             <li><a href="/clients/list/decoucouvert" class="active">Clients à découvers</a></li>

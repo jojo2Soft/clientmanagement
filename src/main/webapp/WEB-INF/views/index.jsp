@@ -97,19 +97,23 @@
     <nav>
         <div class="main-navbar">
             <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
-            <div id="mainnav">
+               <div id="mainnav">
                 <ul class="nav-menu custom-scrollbar">
                     <li class="back-btn">
-                        <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                        <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" ></i></div>
+                    </li>
+                    <li class="back-btn">
+                        <a class="nav-link menu-title link-nav  " href="/"><i data-feather="git-pull-request"></i><span>Dashboard</span></a>
                     </li>
                     <li class="dropdown">
-                        <a class="nav-link menu-title link-nav active " href="/"><i data-feather="git-pull-request"></i><span>Dashboard</span></a>
-                    </li>
-               	  <li class="dropdown">
                         <a class="nav-link menu-title link-nav " href="/agences/list"><i data-feather="git-pull-request"></i><span>Listes des Agences</span></a>
                     </li>
-                     <li class="dropdown">
-                        <a class="nav-link menu-title link-nav " href="/agences/clients"><i data-feather="git-pull-request"></i><span>Lites des cients</span></a>
+               	  <li class="dropdown">
+                        <a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Clients</span></a>
+                        <ul class="nav-submenu menu-content"  style="display: block;">
+                            <li><a href="/agences/clients" class="">Listes</a></li>
+                            <li><a href="/clients/list/decoucouvert" class="active">Clients à découvers</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
