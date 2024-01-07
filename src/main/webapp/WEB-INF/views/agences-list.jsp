@@ -76,9 +76,7 @@
     <div class="nav-right col pull-right right-menu p-0">
       <ul class="nav-menus">
         <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
-        <li class="onhover-dropdown p-0">
-          <button class="btn btn-primary-light" type="button"><i data-feather="log-out"></i>Déconnexion</button>
-        </li>
+        
       </ul>
     </div>
     <div class="d-lg-none mobile-toggle pull-right w-auto"><i data-feather="more-horizontal"></i></div>
@@ -125,22 +123,9 @@
                         <div class="page-body">
                             <!-- Container-fluid starts-->
                                     <div class="container-fluid">
-  <!--  <div class="page-header">
-      <div class="row">
-        <div class="col-lg-6">
-          <h3>Statistique Globale</h3>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-              <li class="breadcrumb-item">Widgets</li>
-            <li class="breadcrumb-item active">General</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-</div>       -->  
+   
         <div class="container-fluid">
             <div class="row my-4">
-               		 <a href="/agences/add-client-form" class="btn btn-success col-4">Ajouter une agence</a>
                  </div>
                 </div>
                 <div class="col-sm-12">

@@ -148,9 +148,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
                 ></a>
               </li>
               <li class="onhover-dropdown p-0">
-                <button class="btn btn-primary-light" type="button">
-                  <i data-feather="log-out"></i>DÃ©connexion
-                </button>
+                
               </li>
             </ul>
           </div>
@@ -218,22 +216,7 @@ uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
           <!-- Container-fluid starts-->
-          <div class="container-fluid">
-            <div class="page-header">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h3>General</h3>
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="/dashboard.html">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">Widgets</li>
-                    <li class="breadcrumb-item active">General</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
+     
           <div class="container-fluid">
             <div class="row">
               <!-- Zero Configuration  Starts-->
